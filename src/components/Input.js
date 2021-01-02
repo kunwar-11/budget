@@ -38,8 +38,8 @@ function Input({inc , setInc , exp , setExp}) {
                 <option value="exp">-</option>
             </select>
             <input className = {`${isInc ? 'i' : 'e'}`} onChange = {descChangeHandler} value = {desc} type="text" placeholder = "enter description"/>
-            <input className = {`${isInc ? 'i' : 'ee'}`} onChange = {amtChangeHandler} value = {amt} type="number" placeholder = "enter amount"/>
-            <FontAwesomeIcon className = {`${isInc ? 'in' : 'e'}`} onClick = {submitHandler} icon = {faCheckCircle} size = "2x"/>
+            <input className = {`${isInc ? 'i' : 'e'}`} onChange = {amtChangeHandler} value = {amt} type="number" placeholder = "enter amount"/>
+            <FontAwesomeIcon className = {`${isInc ? 'in' : 'ee'}`} onClick = {submitHandler} icon = {faCheckCircle} size = "2x"/>
         </form>
     )
 }
