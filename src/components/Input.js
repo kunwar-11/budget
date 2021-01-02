@@ -20,15 +20,13 @@ function Input({inc , setInc , exp , setExp}) {
         setIsInc(!isInc)
     }
     const submitHandler = () => {
-        if(amt !== '' && desc !== '')
-         {
+        if() {
         if(type === 'inc') {
             setInc([...inc , {description : desc , amt : parseFloat(amt) , id : uuidv4()}])
         }
         if(type === 'exp') {
             setExp([...exp , {description : desc , amt : parseFloat(amt) , id : uuidv4()}])
-        }
-    }
+        }}
         //console.log(inc)
         setDesc("")
         setAmt("")
